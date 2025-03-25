@@ -1,0 +1,120 @@
+<html>
+    <head>
+ 		<link rel="stylesheet" href="stylecompetence.css" media="(min-width: 1201px)" type="text/css" />
+		<link rel="stylesheet" href="stylecompetencemobile.css" media="(max-width: 1200px)" type="text/css" />
+
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" />
+		<title> My Portfolio </title>
+	</head>
+	<body> 
+         <!-- BARRE DE NAVIGATION  -->
+    <div class="mobile-controls">
+		<button class="buttonmenu" id="openbutton" onclick="openMenu()"> <img src="../images/buttonmenu.png"> </button>
+		<button class="buttonmenu" id="closebutton" onclick="closeMenu()"> <img src="../images/buttonmenu.png"></button>
+    <a href="../index.html"><button class="buttonmenu"><img src="../images/home.png" alt=""></button></a> </div>
+  </div>
+		<nav id ="menuappa" class="nav-bar">
+			
+			<div class="logo-nav">
+				<a href="../index.html">
+					<img id="logo" src="../images/logo.png">
+				</a>
+			</div>
+
+            <ul class="nav-links">
+				
+				<li class="link" id="competence">Mes compétences</li>
+
+				<li class="link"><a href="../experiences/experiences.html">Mes projets</a>
+				<ul class="dropmenu">
+					<li>Mes projets</li>
+				</ul>
+			</li>
+    	
+			</li>
+     
+    </ul>
+		</nav>
+         <!-- BARRE DE NAVIGATION  -->
+		 <h1 id="titrepage">MES COMPÉTENCES</h1><br>
+			<h2 id="titrepage">INFORMATIQUE</h2>
+            <div class="tableau">
+            <table style="width:100%">
+                <tr>
+                  <th>Langages </th>
+                  <th>Système d'exploitation</th>
+                  <th>Outils</th>
+                </tr>
+                <tr>
+                  <td>Python</td>
+                  <td>Windows</td>
+                  <td>Suite Office (word, excel etc..)</td>
+                </tr>
+                <tr>
+                    <td>Javascript</td>
+                    <td>Linux</td>
+                    <td>Microsoft Access</td>
+                  </tr>
+                  <tr>
+                    <td>C / C++</td>
+                    <td>Ubuntu</td>
+                    <td>CLion / PyCharm / PhpStorm / VScode / Android Studio</td>
+                  </tr>
+                  <tr>
+                    <td>HTML/CSS</td>
+                    <td></td>
+                    <td>GCC</td>
+                  </tr>
+                  <tr>
+                    <td>PHP</td>
+                    <td></td>
+                    <td>Git / GitHub</td>
+                  </tr>
+                  <tr>
+                    <td>SQL</td>
+                    <td></td>
+                    <td>Trello</td>
+                  </tr>
+                        
+              </table>
+            </div>
+		<h2 id="titrepage">MES LANGUES PARLÉES</h2>
+		<ul class="languebox">
+            <li class="langues" id="francais"><img src="../images/franceflag.png" alt="">
+            <p>Langue natale</p>
+
+            </li>
+            <li class="langues" id="anglais"><img src="../images/britainflag.jpg" alt="">            <p id="languetext">Niveau décent</p>
+
+            </li>
+            <li class="langues" id="allemand"><img src="../images/germanflag.png" alt="">            <p>Niveau moyen</p>
+            </li>
+            <li class="langues" id="arabe"><img src="../images/saoudianflag.jpg" alt="">            <p>Bon niveau</p>
+            </li>
+        </ul>
+		</body>
+
+		<script>
+
+	function openMenu(){
+            document.getElementById("menuappa").style.display = "block";
+			document.getElementById("closebutton").style.display = "block";
+			document.getElementById("openbutton").style.display = "none";
+
+
+
+        }
+        function closeMenu(){
+            document.getElementById("menuappa").style.display = "none";
+			document.getElementById("openbutton").style.display = "block";
+			document.getElementById("closebutton").style.display = "none";
+
+
+
+        }
+
+
+		</script>
+</html>

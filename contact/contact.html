@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <script src="bootstrap.bundle.min.js"></script>     
+        <link rel ="stylesheet" type="text/css" href="bootstrap.min.css"> <!--Lien vers le CSS de Bootstrap-->
+ 		<link rel="stylesheet" href="stylecontact.css" media="(min-width: 1201px)" type="text/css" />
+		<link rel="stylesheet" href="stylecontactmobile.css" media="(max-width: 1200px)" type="text/css" />
+
+
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" />
+		<title> My Portfolio </title>
+	</head>
+	<body> 
+         <!-- BARRE DE NAVIGATION  -->
+         <div class="mobile-controls">
+          <button class="buttonmenu" id="openbutton" onclick="openMenu()"> <img src="../images/buttonmenu.png"> </button>
+          <button class="buttonmenu" id="closebutton" onclick="closeMenu()"> <img src="../images/buttonmenu.png"></button>
+          <a href="../index.html"><button class="buttonmenu"><img src="../images/home.png" alt=""></button></a> </div>
+        </div>
+		<nav id ="menuappa" class="nav-bar">
+			
+			<div class="logo-nav">
+				<a href="../index.html">
+					<img id="logo" src="../images/logo.png">
+				</a>
+			</div>
+
+            <ul class="nav-links">
+				
+                <li class="link"><a href="../competences/competences.html">Mes compétences</a>
+					<ul class="dropmenu">
+					<li>En informatique</li>
+					<li>Mes langues parlées</li>
+				</ul>
+			</li>
+            <li class="link"><a href="../experiences/experiences.html">Mes expériences</a>
+				<ul class="dropmenu">
+					<li>Mes projets</li>
+				</ul>
+      </li>
+    
+    </ul>
+		</nav>
+         <!-- BARRE DE NAVIGATION  -->
+         <h1 id="titrepage">ME CONTACTER</h1><br>
+         
+           <div class="cadre">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">@</span>
+              <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+         
+            
+            <div class="input-group">
+              <span class="input-group-text">With textarea</span>
+              <textarea class="form-control" aria-label="With textarea"></textarea>
+            </div>
+            <a href="envoiesucces.html"><button type="button" id="envoyerbouton" class="btn btn-success">Envoyer</button></a>
+           </div>
+
+
+        <script>
+
+            function openMenu(){
+                    document.getElementById("menuappa").style.display = "block";
+                    document.getElementById("closebutton").style.display = "block";
+                    document.getElementById("openbutton").style.display = "none";
+        
+        
+        
+                }
+                function closeMenu(){
+                    document.getElementById("menuappa").style.display = "none";
+                    document.getElementById("openbutton").style.display = "block";
+                    document.getElementById("closebutton").style.display = "none";
+        
+        
+        
+                }
+        
+        
+                </script>
+
+
+
+		</body>
+
+	
+</html>

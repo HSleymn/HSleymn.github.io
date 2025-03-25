@@ -1,0 +1,91 @@
+<html>
+    <head>
+ 		<link rel="stylesheet" href="styleparcours.css" media="(min-width: 1201px)" type="text/css" />
+		<link rel="stylesheet" href="styleparcoursmobile.css" media="(max-width: 1200px)" type="text/css" />
+
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" />
+		<title> My Portfolio </title>
+	</head>
+	<body> 
+         <!-- BARRE DE NAVIGATION  -->
+		 <div class="mobile-controls">
+			<button class="buttonmenu" id="openbutton" onclick="openMenu()"> <img src="../images/buttonmenu.png"> </button>
+			<button class="buttonmenu" id="closebutton" onclick="closeMenu()"> <img src="../images/buttonmenu.png"></button>
+		<a href="../index.html"><button class="buttonmenu"><img src="../images/home.png" alt=""></button></a> </div>
+		<nav id ="menuappa" class="nav-bar">
+			
+			<div class="logo-nav">
+				<a href="../index.html">
+					<img id="logo" src="../images/logo.png">
+				</a>
+			</div>
+
+			<ul class="nav-links">
+				<li class="link" id="parcours">Mon parcours scolaire
+					
+				</li>
+				<li class="link"><a href="../competences/competences.html">Mes compétences</a>
+					<ul class="dropmenu">
+					<li>En informatique</li>
+					<li>Mes langues parlées</li>
+				</ul>
+			</li>
+				<li class="link"><a href="../experiences/experiences.html">Mes projets</a>
+				<ul class="dropmenu">
+					<li>Mes projets</li>
+				</ul>
+			</li>
+				
+		</li>
+		
+	</ul>
+		</nav>
+         <!-- BARRE DE NAVIGATION  -->
+		 <h1 id="titrepage">MON PARCOURS SCOLAIRE</h1><br>
+			<h2 id="titrepage">Mes années au lycée (2020-2023)</h2>
+		<article>
+			Mes années au lycée furent très enrichissantes. En effet, j'ai développé de nombreuses compétences
+			de connaissances sur plusieurs domaines, notamment en informatique. En première, j'ai suivi les spécialités
+			mathématiques, numérique et sciences informatique ainsi que physique-chimie. J'ai néanmoins retiré la spécialité physique-chimie 
+			en terminale. <br>
+			Mes années au lycée furent marqués par un projet en particulier (consulter la rubrique "Mes projets" pour plus de détail)
+			et de nombreuses expériences dans plusieurs domaines. <br>
+			Je peux notamment parler de l'option DNL-Histoire Géographie Allemand que j'ai choisi pour mes années de premiere et de terminale.
+			Cette option ajoutait une épreuve en fin d'année de terminale, une épreuve orale en allemand uniquement et qui porte sur ce qu'on 
+			a étudié durant l'année. <br>
+			Ma fin d'année de terminale était consacrée à cette épreuve, que j'ai réussi en ayant eu un 14 sur l'épreuve finale.
+
+		</article>
+		<h2 id="titrepage">À l'IUT (2023-...)</h2>
+		<article>
+			Ma rentrée à l'IUT s'est bien passé. Il y a une différence que j'ai ressenti sur le travail demandé par rapport au lycée que j'ai enduré durant les premières semaines, néanmoins, j'y suis beaucoup plus habitué maintenant et j'aime beaucoup le cursus.
+			Au début, j'avais des doutes sur mon choix. Je me remettais en question pour savoir si c'était bien fait pour moi
+			Mais aujourd'hui, je suis bien content d'être sûr d'avoir trouver ma voie. <br>
+			
+		</article>
+		</body>
+
+		<script>
+
+	function openMenu(){
+            document.getElementById("menuappa").style.display = "block";
+			document.getElementById("closebutton").style.display = "block";
+			document.getElementById("openbutton").style.display = "none";
+
+
+
+        }
+        function closeMenu(){
+            document.getElementById("menuappa").style.display = "none";
+			document.getElementById("openbutton").style.display = "block";
+			document.getElementById("closebutton").style.display = "none";
+
+
+
+        }
+
+
+		</script>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <script src="bootstrap.bundle.min.js"></script>     
+ 		<link rel="stylesheet" href="styleloisirs.css" media="(min-width: 1201px)" type="text/css" />
+		<link rel="stylesheet" href="styleloisirsmobile.css" media="(max-width: 1200px)" type="text/css" />
+
+
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" />
+		<title> My Portfolio </title>
+	</head>
+	<body> 
+         <!-- BARRE DE NAVIGATION  -->
+         <div class="mobile-controls">
+          <button class="buttonmenu" id="openbutton" onclick="openMenu()"> <img src="../images/buttonmenu.png"> </button>
+          <button class="buttonmenu" id="closebutton" onclick="closeMenu()"> <img src="../images/buttonmenu.png"></button>
+          <a href="../index.html"><button class="buttonmenu"><img src="../images/home.png" alt=""></button></a> </div>
+        </div>
+		<nav id ="menuappa" class="nav-bar">
+			
+			<div class="logo-nav">
+				<a href="../index.html">
+					<img id="logo" src="../images/logo.png">
+				</a>
+			</div>
+
+            <ul class="nav-links">
+				<li class="link"><a href="../parcours/parcours.html">Mon parcours scolaire</a>
+					<ul class="dropmenu">
+						<li>Au lycée</li>
+						<li>À l'IUT</li>
+					</ul>
+				</li>
+                <li class="link"><a href="../competences/competences.html">Mes compétences</a>
+					<ul class="dropmenu">
+					<li>En informatique</li>
+					<li>Mes langues parlées</li>
+				</ul>
+			</li>
+            <li class="link"><a href="../experiences/experiences.html"> Mes projets</a>
+				<ul class="dropmenu">
+					<li>Mes projets</li>
+				</ul>
+			
+			</ul>
+		</nav>
+         <!-- BARRE DE NAVIGATION  -->
+    
+        
+        
+        <table>
+          <tr>
+          
+            <td><img src="../images/basket.jpg" alt=""></td>
+            <td><img src="" alt=""></td>
+
+
+          </tr>
+        </table>
+
+            
+           
+
+
+        <script>
+
+            function openMenu(){
+                    document.getElementById("menuappa").style.display = "block";
+                    document.getElementById("closebutton").style.display = "block";
+                    document.getElementById("openbutton").style.display = "none";
+        
+        
+        
+                }
+                function closeMenu(){
+                    document.getElementById("menuappa").style.display = "none";
+                    document.getElementById("openbutton").style.display = "block";
+                    document.getElementById("closebutton").style.display = "none";
+        
+        
+        
+                }
+        
+        
+                </script>
+
+
+
+		</body>
+
+	
+</html>

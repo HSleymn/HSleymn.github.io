@@ -1,0 +1,92 @@
+<html>
+    <head>
+ 		<link rel="stylesheet" href="styles/styleindex.css" media="(min-width: 1201px)" type="text/css" />
+		<link rel="stylesheet" href="styles/stylemobileindex.css" media="(max-width: 1200px)" type="text/css" />
+
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" />
+		<title> My Portfolio </title>
+	</head>
+	<body> 
+
+		<div class="mobile-controls">
+			<button class="buttonmenu" id="openbutton" onclick="openMenu()"> <img src="images/buttonmenu.png"> </button>
+			<button class="buttonmenu" id="closebutton" onclick="closeMenu()"> <img src="images/buttonmenu.png"></button>
+		<a href="index.html"><button class="buttonmenu"><img src="images/home.png" alt=""></button></a> </div>
+	  </div>
+		<nav class="nav-bar" id="menuappa">
+			
+			<div class="logo-nav">
+				<a href="../index.html">
+					<img id="logo" src="images/logo.png">
+				</a>
+			</div>
+
+			<ul class="nav-links">
+				<li class="link"><a href="parcours/parcours.html">Mon parcours scolaire</a>
+					<ul class="dropmenu">
+						<li>Au lycée</li>
+						<li>À l'IUT</li>
+					</ul>
+				</li>
+				<li class="link"><a href="competences/competences.html">Mes compétences</a>
+					<ul class="dropmenu">
+					<li>En informatique</li>
+					<li>Mes langues parlées</li>
+				</ul>
+			</li>
+				<li class="link"><a href="experiences/experiences.html">Mes projets</a>
+				<ul class="dropmenu">
+					<li>Mes projets</li>
+				</ul>
+			</li>
+				
+		</li>
+		<li class="link"><a href="../loisirs/loisirs.html">Mes loisirs</a>
+		<ul class="dropmenu">
+			<li>Les jeux-vidéos</li>
+		</ul>
+	</li>
+	</ul>
+		</nav>
+       
+		<div class="hire-me">
+			<div class="text">
+			<h2 id="summaryTitle">Un peu plus sur moi... <br></h2>
+
+			<artcile id="hireme-text">Je suis Souleymane HADJ MESSAOUD, alias HSleymn (mon pseudo de développeur). 
+				J'ai 18 ans et je suis passioné de code et d'informatique en général. Depuis tout jeune, je joue aux jeux vidéos et, inévitablement, 
+				on arrive à un moment on essaye de coder son propre jeu. C'est ainsi que j'ai écrit mes premières lignes de code et, de fil en aiguille, 
+				je me suis passioné pour ce domaine.
+			</artcile>
+			</div>
+
+			<a href="contact/contact.html"><button type="button" class="btn">Me contacter </button></a>
+
+			</div>
+		
+			<script>
+
+				function openMenu(){
+						document.getElementById("menuappa").style.display = "block";
+						document.getElementById("closebutton").style.display = "block";
+						document.getElementById("openbutton").style.display = "none";
+			
+			
+			
+					}
+					function closeMenu(){
+						document.getElementById("menuappa").style.display = "none";
+						document.getElementById("openbutton").style.display = "block";
+						document.getElementById("closebutton").style.display = "none";
+			
+			
+			
+					}
+			
+			
+					</script>
+	
+		</body>
+</html>

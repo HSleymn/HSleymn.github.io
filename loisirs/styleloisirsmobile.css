@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* BARRE DE NAVIGATION */
+
+body{
+    box-sizing: border-box;
+    /* background: url("../images/fond.png") no-repeat center center fixed; */
+    background-color: rgb(27, 27, 44);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    zoom: 40%;
+  }
+
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+img  {
+  width: 100%;
+  display: flex;
+  border-radius: 10px;
+  animation: catourne 0.2sec infinite
+}
+
+#openbutton{
+    display: none;
+  }
+
+  .buttonmenu{
+     border-radius: 20px;
+     background-color: rgb(27, 27, 44);
+}
+.buttonmenu img{
+    width: 15%;
+    display: block;
+}
+.nav-bar{  
+  top: 5px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
+  display: block;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgb(33, 43, 51);
+  border-radius: 14px;
+}
+
+a{
+  text-decoration: none;
+    color: black;
+}
+
+.logo-nav {
+display: none;
+width: 0;
+  
+}
+
+
+
+.nav-links{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding-right: 0.5rem;
+}
+.dropmenu{
+  display: none;
+}
+
+
+
+.link a{
+  position: relative;
+  color: white;
+  padding-bottom: 0.75rem;
+}
+
+.link a::after{
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(164, 159, 228);
+  transition: all 0.5s ease-out;
+}
+
+.link:hover a::after{
+   width: 90%;
+}
+.link a{
+  position: relative;
+  color: white;
+  padding-bottom: 0.75rem;
+}
+
+.dropmenu{
+  list-style: none;
+  padding-top: 1em;
+    flex-direction: row;
+    z-index: 2;
+    flex-wrap: wrap;
+
+
+}
+.dropmenu li{
+  background-color: rgb(164, 159, 228);
+  text-decoration: none;
+  padding: 1rem;
+  width: 180px;
+  border-radius: 5px;
+  outline: solid 2px rgb(88, 88, 88);
+  transition: all 0.2s ease-out;
+}
+
+.dropmenu li:hover {
+  scale: 1.02;
+  opacity: 1;
+  z-index: 3;
+}
+#loisirs{
+    font-weight: bold;
+    color: white;
+}
+
+
+nav ul li:hover ul{
+  display: flex;
+  position: absolute;
+}
+
+.mobile-controls{
+  display: flex;
+  flex-direction:row;
+}
+
+/* BARRE DE NAVIGATION */
+
+
+#titrepage{
+  color: white;
+  text-align: center;
+  font-size:50 ;
+  margin-bottom: 50px;
+  margin-top: 50px;
+
+}
+
+.texteloisirs{
+    list-style: none;
+    background-color: rgb(33, 43, 51);
+    max-width: 1200px;
+    padding: 2rem 1rem;
+    margin: auto;
+    color: white;
+    border-radius: 14px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 4em;
+  
+  }
+  
+  #texte{
+      margin-bottom: 2em;
+      margin-top: 2rem;
+  
+  }
+  
+  .githubbutton{
+      transition: all 0.5s ease;
+  }
+  
+  .githubbutton:hover{
+      scale: 1.02;
+  }
+
+  
